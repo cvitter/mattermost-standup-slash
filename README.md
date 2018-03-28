@@ -77,7 +77,7 @@ The content in this repository is Open Source material released under the MIT Li
 The code in this repository is not sponsored or supported by Mattermost, Inc.
 
 # Authors
-* Author: [George Goldberg](https://github.com/grundleborg
+* Author: [George Goldberg](https://github.com/grundleborg)
 * Author: [Craig Vitter](https://github.com/cvitter)
 
 # Contributors 
