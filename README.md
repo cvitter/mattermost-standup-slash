@@ -20,7 +20,7 @@ If you have the two things above you can proceed to the installation steps below
 The following steps
 
 1. Log into the machine that will host the Python Flask application;
-2. Clone this repository to your machine: `git clone https://github.com/cvitter/mattermost-slash-standup.git`;
+2. Clone this repository to your machine: `git clone https://github.com/cvitter/mattermost-standup-slash.git`;
 3. Run the Flask application - there are a number of ways to run the application but I use the following command that runs the application headlessly and captures output into a log file for troubleshooting:
 
 ```
@@ -65,7 +65,7 @@ application. Inside of Mattermost:
 **Help!** If you like this project and want to make it even more awesome please contribute your ideas,
 code, etc.
 
-If you have any questions, feedback, suggestions, etc. please submit them via issues here: https://github.com/cvitter/mattermost-slash-standup/issues
+If you have any questions, feedback, suggestions, etc. please submit them via issues here: https://github.com/cvitter/mattermost-standup-slash/issues
 
 If you find errors please feel to submit pull requests. Any help in improving this resource is appreciated!
 
