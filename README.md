@@ -30,7 +30,7 @@ sudo python standup.py >> jenkins.log 2>&1 &
 **Note**: When the application is running you can test it locally by posting data to it using curl like the following example:
 
 ```
-curl -X POST -F "text=build mattermost-test-1" http://127.0.0.1:5005/standup
+curl -X POST -F "text=build mattermost-test-1" http://127.0.0.1:5004/standup
 ```
 
 ## Setup the Slash Command
@@ -46,7 +46,7 @@ application. Inside of Mattermost:
 	1. Title - your choice (i.e. Standup)
 	2. Description - your choice again;
 	3. Command Trigger Work - standup
-	4. Request URL - the URL of your flask application (i.e. http://something.com:5005/standup)
+	4. Request URL - the URL of your flask application (i.e. http://something.com:5004/standup)
 	5. Response Username - optional
 	6. Response Icon - optional
 	7. Autocomplete - check this so your users know that the slash command exists
