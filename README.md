@@ -24,13 +24,12 @@ The following steps
 3. Run the Flask application - there are a number of ways to run the application but I use the following command that runs the application headlessly and captures output into a log file for troubleshooting:
 
 ```
-sudo python standup.py >> jenkins.log 2>&1 &
+sudo python standup.py >> standup.log 2>&1 &
 ```
 
-**Note**: When the application is running you can test it locally by posting data to it using curl like the following example:
-
+**Note**: The code as written will be available on port 5004. If you need to change ports you can do so in the following line of code:
 ```
-curl -X POST -F "text=build mattermost-test-1" http://127.0.0.1:5004/standup
+   app.run(host='0.0.0.0', port=5004, debug = False)
 ```
 
 ## Setup the Slash Command
@@ -45,7 +44,7 @@ application. Inside of Mattermost:
 5. Fill in the form (refer to Mattermost help for full explanations of each field):
 	1. Title - your choice (i.e. Standup)
 	2. Description - your choice again;
-	3. Command Trigger Work - standup
+	3. Command Trigger Word - standup
 	4. Request URL - the URL of your flask application (i.e. http://something.com:5004/standup)
 	5. Response Username - optional
 	6. Response Icon - optional
@@ -57,7 +56,17 @@ application. Inside of Mattermost:
 
 # Using the Slash Command
 
+Once the slash command is set up it is quite easy to use. Type '/standup' and begin entering your markdown formatted status update as demonstrated below:
 
+![Screenshot of the sample status being entered](images/typing-in-status.png)
+
+If you were to submit the status above the command should return the following:
+
+![Screenshot of the sample return status](images/status-returned.png)
+
+If you only type '/standup' and hit enter you will see the following message returned:
+
+![Status error message](images/no-status-entered.png)
 
 
 # Make this Project Better (Questions, Feedback, Pull Requests Etc.)
