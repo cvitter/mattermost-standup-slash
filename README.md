@@ -3,7 +3,7 @@
 The following code is a Flask based adaptation of George Goldberg's (https://github.com/grundleborg) AWS Lambda based Standup Slash command: https://grundleborg.github.io/posts/mattermost-custom-slash-command-aws-lambda/
 
  **Import Note**: This application is not really designed for production use. It is meant 
- only to demonstrate how to connect Mattermost and Jenkins together easily using commonly
+ only to demonstrate how to build useful slash commands using commonly
  available tools like Python and Flask (http://flask.pocoo.org/).
  
 # Installing the Slash Command
