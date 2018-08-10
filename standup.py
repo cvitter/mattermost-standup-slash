@@ -14,6 +14,7 @@ def slash_command():
     the message entered by the user who invoked the slash command
     """
     form_text = request.form["text"]
+    channel = request.form["channel_name"]
     if len(form_text) > 0:
         """
         Format the return message with markdown with standup hash tags
@@ -21,7 +22,7 @@ def slash_command():
         output = "##### Status Update for {}\n\n{}\n\n#standup-{} #standup".format(
                 datetime.strftime(datetime.now(), "%A %-d %B %Y"),
                 form_text,
-                datetime.strftime(datetime.now(), "%Y_%m_%d"),
+                datetime.strftime(datetime.now(), "%m_%d_%Y"+"_"+channel),
             )
 
         """
