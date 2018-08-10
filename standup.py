@@ -21,7 +21,7 @@ def slash_command():
         output = "##### Status Update for {}\n\n{}\n\n#standup-{} #standup".format(
                 datetime.strftime(datetime.now(), "%A %-d %B %Y"),
                 form_text,
-                datetime.strftime(datetime.now(), "%Y%m%d"),
+                datetime.strftime(datetime.now(), "%Y_%m_%d"),
             )
 
         """
