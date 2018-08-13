@@ -2,13 +2,6 @@ from flask import Flask
 from flask import request
 import json
 from datetime import datetime
-import ConfigParser
-
-
-
-settings = configparser.ConfigParser()
-settings.read(config)
-
 
 
 app = Flask(__name__)
