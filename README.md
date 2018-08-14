@@ -27,9 +27,19 @@ The following steps
 sudo python standup.py >> standup.log 2>&1 &
 ```
 
-**Note**: The code as written will be available on port 5004. If you need to change ports you can do so in the following line of code:
+**Note**: The app by default will be available on port 5004. If you need to change ports please see the config file
+
+
+**Config**: the bot supports a handfull of basic config options which can be set in the config file.
+
 ```
-   app.run(host='0.0.0.0', port=5004, debug = False)
+
+listen_port = 5004 - Port Value of your choosing
+debug_mode = False  - True or False
+tag_date_format = mdy  -  mdy or ydm
+compact_date = False  -  True or False
+include_channel = True  -  True or False
+
 ```
 
 ## Setup the Slash Command
