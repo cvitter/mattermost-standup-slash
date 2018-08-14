@@ -1,0 +1,6 @@
+[main]
+listen_port = 5004
+debug_mode = False
+tag_date_format = mdy
+compact_date = False
+include_channel = True
