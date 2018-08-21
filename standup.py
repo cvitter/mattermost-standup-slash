@@ -13,7 +13,6 @@ config = SafeConfigParser()
 config.read('config')
 
 listen_port = config.get('main', 'listen_port')
-debug_mode = config.get('main', 'debug_mode')
 include_channel = config.get('main', 'include_channel')
 date_format = config.get('main', 'tag_date_format')
 compact_date= config.get('main', 'compact_date')
