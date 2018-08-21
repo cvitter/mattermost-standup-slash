@@ -35,7 +35,6 @@ sudo python standup.py >> standup.log 2>&1 &
 ```
 
 listen_port = 5004 - Port Value of your choosing
-debug_mode = False  - True or False
 tag_date_format = mdy  -  mdy or ydm
 compact_date = False  -  True or False
 include_channel = True  -  True or False
