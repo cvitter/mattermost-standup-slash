@@ -98,5 +98,7 @@ The code in this repository is not sponsored or supported by Mattermost, Inc.
 * Author: [George Goldberg](https://github.com/grundleborg)
 * Author: [Craig Vitter](https://github.com/cvitter)
 
-# Contributors 
+# Contributors
+* Contributor: [Bobby Boughton](https://github.com/howaminotme)
+ 
 Please submit Issues and/or Pull Requests.
