@@ -77,4 +77,4 @@ def slash_command():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=listen_port, debug=debug_mode)
+    app.run(host='0.0.0.0', port=listen_port, debug=False)
